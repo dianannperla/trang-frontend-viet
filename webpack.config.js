@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
@@ -26,6 +26,6 @@ module.exports = {
   },
   devtool: 'source-map',
   optimization: {
-    minimize: true
+    minimize: false
   }
 };
