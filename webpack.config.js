@@ -10,7 +10,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.jsx?$/, 
+        test: /.jsx?$/,
         exclude: /node_modules/, 
         use: {
           loader: 'babel-loader',
@@ -18,11 +18,18 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }
+      },
+      {
+        test: /.tsx?$/,
+        exclude: /node_modules/, 
+        use: {
+          loader: 'ts-loader'
+        }
       }
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
   },
   devtool: 'source-map',
   optimization: {
