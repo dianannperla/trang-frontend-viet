@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
@@ -20,7 +20,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(tsx?|ts)$/,
+        test: /\.(tsx?|ts)$/, 
         exclude: /node_modules/, 
         use: {
           loader: 'ts-loader'
