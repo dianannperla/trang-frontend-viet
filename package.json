@@ -1,0 +1,26 @@
+{
+  "name": "trang-frontend-viet",
+  "version": "1.0.0",
+  "description": "Bộ công cụ giao diện web cho người dùng Việt Nam.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/trang-frontend-viet.git"
+  },
+  "keywords": [
+    "UI",
+    "frontend",
+    "Vietnamese"
+  ],
+  "author": "Tên của bạn",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.0.0",
+    "jest": "^27.0.0"
+  }
+}
